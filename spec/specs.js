@@ -1,5 +1,5 @@
-describe('Pizza', function() {
-  it("creates an object called Pizza", function() {
+describe('Pizza', function(toppings, pizzaSize, price) {
+  it("makes a new pizza, from which more pizzas are made", function() {
     var newPizza = new Pizza(["peppercini", "spinach"], "large", 18);
     expect(newPizza.toppings).to.eql(["peppercini", "spinach"]);
     expect(newPizza.pizzaSize).to.equal("large");
@@ -8,8 +8,8 @@ describe('Pizza', function() {
 });
 
 
-describe('toppingsCostCalc', function() {
-  it("will assess the size of the pizza and calculate the cost of toppings based on size", function() {
+describe('toppingsCostCalc', function(toppings, pizzaSize) {
+  it("determines the total cost of toppings, based on pizza size and amount of toppings", function() {
     var newPizza = new Pizza()
     expect(newPizza.toppingsCostCalc(["peppercini", "spinach"], "large")).to.equal(3)
   });
@@ -17,7 +17,7 @@ describe('toppingsCostCalc', function() {
 
 
 describe('pizzaPrice', function() {
-  it("will assess the pizza size and add the toppingsCost, returning the overall pizza cost", function() {
+  it("provides the total cost of a pizza based on its size and amount of toppings", function() {
     var newPizza = new Pizza()
     expect(newPizza.pizzaPrice(3, "large")).to.equal(18)
   });

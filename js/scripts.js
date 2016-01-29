@@ -52,16 +52,3 @@ Pizza.prototype.toppingsCostCalc = function(toppings, pizzaSize) {
 
     });
   });
-
-
-  // $( "input" ).on( "click", function() {
-  //   $( ".selectedtoppings" ).text(html( $( "input:checked" ).val() ));
-  // });
-
-// $(document).ready(function() {
-//   $("#order").click(function(event){
-//     event.preventDefault();
-//     var toppings= $("input#topp")
-//   }
-//
-// });
