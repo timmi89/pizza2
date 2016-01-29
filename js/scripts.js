@@ -4,6 +4,12 @@ function Pizza(toppings, pizzaSize, price) {
   this.price = price;
 }
 
+Pizza.prototype.toppingsCost = function () {
+  for (var i = 0; i < this.toppings.length; i++){
+    this.price += 1.25;
+  }
+ return this.price;
+};
 // Pizza.prototype.toppingsCostCalculator = function(toppings, pizzaSize) {
 //   var extraToppings = toppings.length;
 //   if (pizzaSize === "medium") {
@@ -29,4 +35,4 @@ function Pizza(toppings, pizzaSize, price) {
 // //
 // // $(document).ready(function() {
 // //
-// });
+});
