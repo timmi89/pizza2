@@ -8,61 +8,63 @@
   <script src="js/bootstrap.min.js"></script>
 
 
-  <title>Pizza</title>
+  <title>pizza, yum</title>
   </head>
   <body>
     <div class="container">
       <div class="header">
-        <h1>Build Your Own Pizza</h1>
+        <h1>EAT PIZZA!!!!!</h1>
       </div>
-      <div class="toppingsbox">
-        <form class="nonmeats">
-          <input type="checkbox" id="peppercini">
+      <div class="boxes">
+        <form class="checkboxes">
+          <div class="veggies">
+
+          <input type="checkbox" id="topping">
           <label for="peppercini" value="peppercini">peppercini</label>
 
-          <input type="checkbox" id="onions">
-          <label for="onions" value="onions">Onions</label>
+          <input type="checkbox" id="topping">
+          <label for="greenPeppers" value="greenPeppers">green peppers</label>
 
-          <input type="checkbox" id="greenpeppers">
-          <label for="greenpeppers" value="greenpeppers">Green Peppers</label>
+          <input type="checkbox" id="topping">
+          <label for="kalamataOlives" value="kalamataOlives">kalamata olives</label>
 
-          <input type="checkbox" id="redpeppers">
-          <label for="redpeppers" value="redpeppers">Roasted Red Peppers</label>
-
-          <input type="checkbox" id="pineapple">
-          <label for="pineapple" value="pineapple">Pineapple</label>
-
-          <input type="checkbox" id="spinach">
+          <input type="checkbox" id="topping">
           <label for="spinach" value="spinach">spinach</label>
 
-          <input type="checkbox" id="tomatoes">
-          <label for="tomatoes" value="tomatoes">Tomatoes</label>
+          <input type="checkbox" id="topping">
+          <label for="garlic" value="garlic">garlic</label>
 
-          <input type="checkbox" id="olives">
-          <label for="olives" value="olives">Olives</label>
+          <input type="checkbox" id="topping">
+          <label for="tomatoes" value="tomatoes">tomatoes</label>
+          </div>
+
+          <div class="meats">
+
+          <input type="checkbox" id="topping">
+          <label for="bacon" value="bacon">bacon</label>
+
+          <input type="checkbox" id="topping">
+          <label for="pepperoni" value="pepperoni">pepperoni</label>
+          </div>
         </form>
-        <hr>
-        <form class="meats">
-          <input type="checkbox" id="pepperoni">
-          <label for="pepperoni" value="pepperoni">Pepperoni</label>
 
-          <input type="checkbox" id="sausage">
-          <label for="sausage" value="sausage">Sausage</label>
+        <div class="sizeBoxes">
 
-          <input type="checkbox" id="bacon">
-          <label for="bacon" value="bacon">Bacon</label>
-
-          <input type="checkbox" id="ham">
-          <label for="ham" value="ham">Ham</label>
-        </form>
-      </div>
-      <div class="selectedtoppings">
-
-      </div>
-      <div class="">
-
+          <label for="pizzaSize">how hungry are you?</label>
+         <select class="pizzaSize">
+           <option value="small">small</option>
+           <option value="medium">medium</option>
+           <option value="large">large</option>
+         </select>
         </div>
+            <button type="button" name="button" class="btn btn-primary btn-lg submit">pizza, please!</button>
       </div>
+      <div class="selectedtoppings col-sm-6 pull-right">
+
+            </div>
+            <div class="">
+
+              </div>
     </div>
   </body>
 </html>

@@ -1,3 +1,9 @@
-#result p {
-  display: none;
+.veggies {
+  padding: 25px;
+}
+.meats {
+  padding: 25px;
+}
+.sizeBoxes {
+  padding: 25px;
 }
