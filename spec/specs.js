@@ -7,22 +7,18 @@ describe('Pizza', function() {
   });
 });
 
-describe('toppingsCost', function () {
-  it("calculates the cost of the toppings, based on the amount of them", function(){
-    var newPizza = new Pizza();
-    expect(newPizza.toppingsCost(["peppercini", "spinach"], "large")).to.equal(2.5)
+
+describe('toppingsCostCalc', function() {
+  it("will assess the size of the pizza and calculate the cost of toppings based on size", function() {
+    var newPizza = new Pizza()
+    expect(newPizza.toppingsCostCalc(["peppercini", "spinach"], "large")).to.equal(3)
   });
 });
-// describe('toppingsCostCalculator', function() {
-//   it("will assess the size of the pizza and calculate the cost of toppings based on size", function() {
-//     var newPizza = new Pizza()
-//     expect(newPizza.toppingsCostCalculator(["onions", "pineapple"], "large")).to.equal(4)
-//   });
-// });
-//
-// describe('priceCalculator', function() {
-//   it("will assess the pizza size and add the toppingsCost, returning the overall pizza cost", function() {
-//     var newPizza = new Pizza()
-//     expect(newPizza.priceCalculator(4, "large")).to.equal(15)
-//   });
-// });
+
+
+describe('pizzaPrice', function() {
+  it("will assess the pizza size and add the toppingsCost, returning the overall pizza cost", function() {
+    var newPizza = new Pizza()
+    expect(newPizza.pizzaPrice(3, "large")).to.equal(18)
+  });
+});
