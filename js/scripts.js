@@ -44,9 +44,9 @@ Pizza.prototype.toppingsCostCalc = function(toppings, pizzaSize) {
       var price = newPizza.pizzaPrice(priceToppings, pizzaSize);
 
       if (toppings.length === 0) {
-        $(".selectedtoppings").show().append("<span class='pizzaInfo'>" + pizzaSize + "<br>" + "total: $" + price + ".00 <br></span><br>");
+        $(".selectedtoppings").show().append("<span class='pizzaInfo'>" +"(you're hungry enough to eat a) " + pizzaSize + " (horse made of pizza)" + "<br>" + "your dream pizza will cost you: $" + price + ".00 <br></span><br>");
       } else {
-        $(".selectedtoppings").show().append("<span class='pizzaInfo'>" + toppings + "<br>" + pizzaSize + "<br>" + "Total: $" + price + ".00 </span><br>");
+        $(".selectedtoppings").show().append("<span class='pizzaInfo'>" + toppings + "<br>" + "you're hungry enough to eat a "+ pizzaSize + "<br>" + "Total: $" + price + ".00 </span><br>");
       }
 
 
