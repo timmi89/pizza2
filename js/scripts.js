@@ -7,9 +7,9 @@ function Pizza(toppings, pizzaSize, price) {
 Pizza.prototype.toppingsCostCalc = function(toppings, pizzaSize) {
   var moreToppings = toppings.length;
   if(pizzaSize === "small" || pizzaSize === "medium"){
-    var toppingsCost = (moreToppings) * (1);
+    var toppingsCost = (moreToppings * 1);
   } else {
-    var toppingsCost = (moreToppings) * (1.5);
+    var toppingsCost = (moreToppings * 1.5);
   }
   return toppingsCost;
 }

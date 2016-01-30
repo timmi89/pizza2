@@ -11,3 +11,20 @@
 
   background-color: green;
 }
+body{
+  background-image: url(http://www.themesltd.com/headers2/pepperoni_pizza_slices.png);
+}
+.container {
+  text-align: center;
+  background-color: #33cccc;
+  padding-bottom: 25px;
+}
+#dog {
+  float: left;
+}
+#cat {
+  float: right;
+}
+.boxes {
+  padding: 15px;
+}
